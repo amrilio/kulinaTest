@@ -5,6 +5,6 @@ product_id VARCHAR(10) NOT NULL,
 user_id VARCHAR(10) NOT NULL,
 rating FLOAT,
 review TEXT,
-created_at TIMESTAMP,
-updated_at TIMESTAMP
+created_at NOT NULL DEFAULT CURRENT_TIMESTAMP,
+updated_at NOT NULL DEFAULT CURRENT_TIMESTAMP
 )
